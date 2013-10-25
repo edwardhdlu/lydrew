@@ -16,10 +16,13 @@
 //= require_tree .
 
 $(document).ready(function() {
-	
-	var curpath = window.location.pathname;
 
-	if (curpath == "/") {
+	var doc_height = $(document).height() - 150
+	$('#content_standard').height(doc_height).css({});
+	
+	var cur_path = window.location.pathname;
+
+	if (cur_path == "/") {
 		$('#home').css('color','#65BAA2');
 	}
 	else {
@@ -33,7 +36,7 @@ $(document).ready(function() {
 		);
 	}
 
-	if (curpath == "/blog") {
+	if (cur_path == "/blog") {
 		$('#blog').css('color','#BA95C7');
 	}
 	else {
@@ -47,7 +50,7 @@ $(document).ready(function() {
 		);
 	}
 
-	if (curpath == "/about") {
+	if (cur_path == "/about") {
 		$('#about').css('color','#DE913E');
 	}
 	else {
