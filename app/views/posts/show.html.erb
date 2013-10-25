@@ -1,20 +1,10 @@
 <div id="wrapper_blog">
 	<div id="content_standard">
-		<div id="sidebar">
-			<h3><u>Archives</u></h3>
-			<% @months.each do |month| %>
-				<li><%= Date::MONTHNAMES[month[0]]%> <%= month[1]%></li>
-			<% end %>
-		</div>
-		<div id="content_holder">
-			<% @posts.each do |post| %>
-				<h3><%= post.title %></h3>
-				<h4><%= post.created_at.to_date %></h4>
-				<p class="spacing4"><%= raw post.content%></p>
-				<% if post.content != @posts.last.content %>
-				<div class="divider"></div>
-				<% end %>
-			<% end %>
+		<div id="content_holder_single">
+				<h3><%= @post.title %></h3>
+				<h4><%= @post.created_at.to_date %></h4>
+				<p class="spacing4"><%= raw @post.content%></p>
+				<p class="spacing4"><%= link_to "<-Back", :back %></p>
 		</div>
 	</div>
 </div>

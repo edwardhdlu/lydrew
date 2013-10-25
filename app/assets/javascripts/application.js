@@ -15,30 +15,50 @@
 //= require jquery_ujs
 //= require_tree .
 
-$( document ).ready(function() {
-	$('#home').hover(
-	  function() {
-	    $(this).animate({ color: "#65BAA2" }, 500 );
-	  },
-	  function() {
-	    $(this).animate({ color: "#D8EEE8" }, 500 );
-	  }
-	);
-	$('#blog').hover(
-	  function() {
-	    $(this).animate({ color: "#BA95C7" }, 500 );
-	  },
-	  function() {
-	    $(this).animate({ color: "#D8EEE8" }, 500 );
-	  }
-	);
-	$('#about').hover(
-	  function() {
-	    $(this).animate({ color: "#DE913E" }, 500 );
-	  },
-	  function() {
-	    $(this).animate({ color: "#D8EEE8" }, 500 );
-	  }
-	);
+$(document).ready(function() {
+	
+	var curpath = window.location.pathname;
+
+	if (curpath == "/") {
+		$('#home').css('color','#65BAA2');
+	}
+	else {
+		$('#home').hover(
+		  function() {
+		    $(this).animate({ color: "#65BAA2" }, 500 );
+		  },
+		  function() {
+		    $(this).animate({ color: "#D8EEE8" }, 500 );
+		  }
+		);
+	}
+
+	if (curpath == "/blog") {
+		$('#blog').css('color','#BA95C7');
+	}
+	else {
+		$('#blog').hover(
+		  function() {
+		    $(this).animate({ color: "#BA95C7" }, 500 );
+		  },
+		  function() {
+		    $(this).animate({ color: "#D8EEE8" }, 500 );
+		  }
+		);
+	}
+
+	if (curpath == "/about") {
+		$('#about').css('color','#DE913E');
+	}
+	else {
+		$('#about').hover(
+		  function() {
+		    $(this).animate({ color: "#DE913E" }, 500 );
+		  },
+		  function() {
+		    $(this).animate({ color: "#D8EEE8" }, 500 );
+		  }
+		);
+	}
 });
 
