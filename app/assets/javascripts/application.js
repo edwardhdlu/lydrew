@@ -23,43 +23,43 @@ $(document).ready(function() {
 	var cur_path = window.location.pathname;
 
 	if (cur_path == "/") {
-		$('#home').css('color','#65BAA2');
+		$('#home').css('color','#7ABDFF');
 	}
 	else {
 		$('#home').hover(
 		  function() {
-		    $(this).animate({ color: "#65BAA2" }, 500 );
+		    $(this).animate({ color: "#7ABDFF" }, 500 );
 		  },
 		  function() {
-		    $(this).animate({ color: "#D8EEE8" }, 500 );
+		    $(this).animate({ color: "white" }, 500 );
 		  }
 		);
 	}
 
 	if (cur_path == "/blog") {
-		$('#blog').css('color','#BA95C7');
+		$('#blog').css('color','#7ABDFF');
 	}
 	else {
 		$('#blog').hover(
 		  function() {
-		    $(this).animate({ color: "#BA95C7" }, 500 );
+		    $(this).animate({ color: "#7ABDFF" }, 500 );
 		  },
 		  function() {
-		    $(this).animate({ color: "#D8EEE8" }, 500 );
+		    $(this).animate({ color: "white" }, 500 );
 		  }
 		);
 	}
 
 	if (cur_path == "/about") {
-		$('#about').css('color','#DE913E');
+		$('#about').css('color','#7ABDFF');
 	}
 	else {
 		$('#about').hover(
 		  function() {
-		    $(this).animate({ color: "#DE913E" }, 500 );
+		    $(this).animate({ color: "#7ABDFF" }, 500 );
 		  },
 		  function() {
-		    $(this).animate({ color: "#D8EEE8" }, 500 );
+		    $(this).animate({ color: "white" }, 500 );
 		  }
 		);
 	}

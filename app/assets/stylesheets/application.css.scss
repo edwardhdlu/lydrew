@@ -34,7 +34,7 @@ h1 {
 	height: 150px;
 	width: 100%;
 	position: fixed;
-	background-color: #142520;
+	background-color: black;
 	margin: 0 auto;
 	z-index: 2;
 }
@@ -50,7 +50,7 @@ h1 {
 		display: inline;
 	}
 	a {
-		color: #d8eee8;
+		color: white;
 		text-decoration: none;
 	}
 }
@@ -67,7 +67,7 @@ h1 {
 	color: white;
 	margin-top: 150px;
 	background-color: #65BAA2;
-	background-image: url('starbg_home.jpg');
+	background-image: url('starfield.png');
 
 }
 
@@ -78,8 +78,8 @@ h1 {
 	float: left;
 	color: white;
 	margin-top: 150px;
-	background-color: #DE913E;
-	background-image: url('starbg_about.jpg');
+	background-color: #65BAA2;
+	background-image: url('starfield.png');
 }
 
 #wrapper_blog {
@@ -89,8 +89,8 @@ h1 {
 	float: left;
 	color: white;
 	margin-top: 150px;
-	background-color: #BA95C7;
-	background-image: url('starbg_blog.jpg');
+	background-color: #65BAA2;
+	background-image: url('starfield.png');
 }
 
 #banner {
@@ -163,6 +163,7 @@ h2 {
 	color: black;
 	a {
 		text-decoration: none;
+		color: #004182;
 	}
 	a:hover {
 		color: black;
@@ -173,7 +174,7 @@ strong {
 	font-size: 64px;
 	font-weight: bold;
 	letter-spacing: 6px;
-	color: #004045;
+	color: #004182;
 }
 
 #content {
@@ -219,6 +220,7 @@ strong {
 		padding-top: 5px;
 		a {
 			text-decoration: none;
+			color: #004182;
 		}
 		a:hover {
 			color: black;
@@ -240,7 +242,7 @@ h4 {
 }
 
 h5 {
-	color: #65BAA2;
+	color: #7ABDFF;
 	font-size: 24px;
 	text-align: center;
 }
